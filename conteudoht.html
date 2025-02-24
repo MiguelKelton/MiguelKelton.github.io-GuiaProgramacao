@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Programação</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>New</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Guia</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <a href="#"><img class="vetor" src="./imagens/House (1).svg" alt=""></a>
+            </div>
+    
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./imagens/menu_white_36dp.svg" alt=""></button>
+            </div>
+
+
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+    
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Nesse artigo</h2>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#instalar">Instalar Python</a></li>
+                <li><a href="#variaveis">Variáveis</a></li>
+                <li><a href="#operacoes">Operações</a></li>
+                <li><a href="#funcoes">Funções</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1 class="titulo_linguagens">HTML</h1>
+
+            <div id="introducao" class="secao"> <!-- Introdução -->
+                <h2 class="secao_titulo">O que é</h2>
+                <p class="texto_linguagens">HTML é uma linguagem de marcação utilizada para estruturar páginas web. Ele define os elementos 
+                e a organização do conteúdo.
+                </p>
+
+                <p class="texto_ex">Comentários</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code> &lt;!-- Comentário --&gt;</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+            <div id="funcoes" class="secao"> <!-- Estrutura -->
+                <h2 class="secao_titulo">Estrutura</h2>
+                    <p class="subtexto">A estrutura básica de um documento HTML é composta por várias tags e elementos que definem a página.</p>
+                        <p class="subtexto"></p>
+                        <div class="container_cod">
+                            <p class="box_cod" class="texto_cod"><code> &lt;!DOCTYPE html> </br></br>
+                                &lt;html lang="pt-br"></br></br>
+                                &lt;head></br></br>
+                                &lt;meta charset="UTF-8"></br></br>
+
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"></br></br>
+                                &lt;title>Document&lt;/title></br></br>
+                                &lt;/head></br></br>
+                                &lt;body></br></br>
+                                &lt;/body></br></br>
+                                &lt;/html></br></br>
+                            </code></p>
+                            <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                        </div>
+
+                        <p class="subtexto">...</p>
+            
+            
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

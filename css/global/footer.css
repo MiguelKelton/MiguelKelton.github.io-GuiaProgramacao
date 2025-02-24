@@ -1,0 +1,70 @@
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 1700px;
+    padding-top: 50px;
+  }
+
+  .footer-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .footer-info, .footer-contato {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .footer-info h3, .footer-contato h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .footer-info p{
+    padding-top: 20px;
+  }
+
+  .footer-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-contato input, .footer-contato textarea {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+
+  .footer-contato textarea {
+    resize: vertical;
+    height: 100px;
+  }
+
+  .footer-contato button {
+    background-color: #3DDAFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    width: 92%;
+  }
+
+  .footer-contato button:hover {
+    background-color: #237a8d;
+  }
+
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  }

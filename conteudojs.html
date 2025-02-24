@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Programação</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>New</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Guia</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <a href="#"><img class="vetor" src="./imagens/House (1).svg" alt=""></a>
+            </div>
+    
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./imagens/menu_white_36dp.svg" alt=""></button>
+            </div>
+
+
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+    
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Nesse artigo</h2>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#variaveis">Variáveis</a></li>
+                <li><a href="#operadores">Operadores</a></li>
+                <li><a href="#controle">Controle de fluxo</a></li>
+                <li><a href="#exercicios">Exercício</a></li>
+                <li><a href="#dom">Manipulação do DOM</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1 class="titulo_linguagens">JavaScript</h1>
+
+            <div id="introducao" class="secao"> <!-- Introdução -->
+                <h2 class="secao_titulo">O que é</h2>
+                <p class="texto_linguagens">JavaScript é uma linguagem de programação amplamente utilizada para tornar páginas da web interativas. Ela permite criar efeitos dinâmicos, validar formulários, manipular elementos da página e até desenvolver aplicações completas no lado do cliente (frontend) e no lado do servidor (backend, com Node.js).  </br> É uma linguagem interpretada, baseada em eventos e orientada a objetos, sendo um dos pilares do desenvolvimento web, junto com HTML e CSS. JavaScript também é muito usado no desenvolvimento de jogos, aplicativos móveis e sistemas de automação.</p>
+
+                <p class="texto_ex">Usada para carregar um arquivo JavaScript externo em uma página HTML.</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <p class="texto_ex">Exibir informações</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>console.log("texto");</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt="Copiar"></button>
+                </div>
+
+                <p class="texto_ex">Comentários</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>/* comentário longo */</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+             
+            </div>
+            
+            <div class="secao"> <!-- Variaveis -->
+                <h2 class="secao_titulo" id="variaveis">Variáveis  </h2>
+                <p  class="texto_linguagens">Uma variável serve para armazenar dados temporários em um programa, permitindo que você manipule, acesse e modifique esses dados</p>
+                
+                <p class="subtitulo">Const:</p>
+                <p class="subtexto">Const não pode ser redefinida. </br>
+                têm escopo de bloco {} (só são acessíveis dentro do bloco onde foram declaradas). </p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>const text = "texto";</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <p class="subtitulo">Let:</p>
+                <p class="subtexto">O valor pode ser alterado, mas não redeclarado no mesmo escopo. </br>
+                têm escopo de bloco {} (só são acessíveis dentro do bloco onde foram declaradas).</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>let text = "texto";</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <p class="subtitulo">Var:</p>
+                <p class="subtexto">pode ser reatribuído e redeclarado dentro do mesmo escopo. </br>
+                var tem escopo de função (visível em toda a função onde foi declarada).</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>var text ="texto"</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+                
+            </div>
+
+
+
+            <div  class="secao"> <!-- Expressões e operadores -->
+                <h2 class="secao_titulo" id="operadores" >Expressões e operadores</h2>
+                <p  class="texto_linguagens">Os operadores são usados para manipular esses valores e realizar operações matemáticas, lógicas e de comparação.</p>
+                
+                <p class="subtitulo">Operações Matemáticas (Aritméticas)</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>let a = 10, b = 5;</code></p> 
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button> 
+
+                </div>
+
+                <div class="container_cod">
+                    <p class="texto_cod"><code>console.log(a + b);</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <div class="container_cod">
+                    <p class="texto_cod"><code>console.log(a - b);</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <div class="container_cod">
+                    <p class="texto_cod"><code>console.log(a * b);</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <div class="container_cod">
+                    <p class="texto_cod"><code>console.log(a / b);</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>console.log(a % b);</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button> <p>0 (resto da divisão)</p>
+                </div>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>console.log(2 ** 3);</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button> <p>8 (2 elevado a 3)</p>
+                </div>
+
+                <p class="subtitulo">Operadores de Comparação</p>
+
+                <p class="texto_ex">(10 > 5)  Maior que </br></br>
+                    (10 < 5)  Menor que </br></br>
+                    (5 >= 5)  Maior ou igual   </br></br>
+                    (7 <= 4)  Menor ou igual </br></br>
+                    (5 == "5") // true (compara só o valor) </br></br>
+                    (5 === "5") // false (compara valor e tipo) </br></br>
+                    (5 != 3)	Diferente </br></br>
+                    (5 !== "5") Diferente estrito</p> </br></br>
+                    <p class="subtitulo">Operadores Lógicos</p>
+                    <p class="texto_ex">(5 > 3 && 10 > 5) // true (ambas são verdadeiras) </br></br>
+                    (5 > 3 || 10 < 5) // true (pelo menos uma é verdadeira) </br></br>
+                    (!(5 > 3)) // false (inverte o resultado)  </br></br>
+
+                </div>
+            
+            
+
+                    <div class="secao"> <!-- Estruturas de controle de fluxo -->
+                        <h2 class="secao_titulo" id="controle">Estruturas de controle de fluxo  </h2>
+                        <p class="subtitulo">If e Else:</p>
+                        <p class="subtexto">Executa um bloco de código se a condição for verdadeira, senão executa outro bloco.</p>
+                        <p class="subtexto"></p>
+                        <div class="container_cod">
+                            <p class="box_cod" class="texto_cod"><code>let idade = 18; </br></br>
+
+                                if (idade >= 18) { </br></br>
+                                    console.log("Você é maior de idade."); </br></br>
+                                } else { </br></br>
+                                    console.log("Você é menor de idade.");</br>
+                                } </code></p>
+                            <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                        </div>
+        
+                        <p class="subtitulo">If, Else If e Else:</p>
+                        <p class="subtexto">Permite verificar várias condições antes de executar um else.</p>
+                        <div class="container_cod">
+                            <p class="box_cod" class="texto_cod"><code>let nota = 75; </br>
+                                if (nota >= 90) { </br>
+                                    console.log("Nota A"); </br>
+                                } else if (nota >= 80) { </br>
+                                    console.log("Nota B"); </br>
+                                } else if (nota >= 70) { </br>
+                                } else if (nota >= 70) { </br>
+                                    console.log("Nota C"); </br>
+                                } else if (nota >= 70) { </br>
+                                } else { </br>
+                                    console.log("Nota F"); </br>
+                                }
+                                </code></p>
+                            <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                        </div>
+
+
+                        <p class="subtitulo">Switch</p>
+                        <p class="subtexto">(Estrutura de Escolha)
+                            Usado quando há várias possibilidades.</p>
+                        <div class="container_cod">
+                            <p class="box_cod" class="texto_cod"><code>
+                                let dia = 3; </br></br>
+
+                                switch (dia) {</br>
+                                    case 1:</br>
+                                        console.log("Domingo");</br>
+                                        break;</br>
+                                    case 2:</br>
+                                        console.log("Segunda-feira");</br>
+                                        break;</br>
+                                    case 3:</br>
+                                        console.log("Terça-feira");</br>
+                                        break;</br>
+                                    default:</br>
+                                        console.log("Dia inválido");</br>
+                                }
+                                </code></p>
+                            <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                        </div>
+                        
+
+                        <p class="subtitulo">While</p>
+                        <p class="subtexto">(Enquanto)
+                            Executa enquanto a condição for verdadeira.</p>
+                        <div class="container_cod">
+                            <p class="box_cod" class="texto_cod"><code>
+                                let contador = 0;</br></br>
+
+                                while (contador < 5) {</br></br>
+                                    console.log("Número:", contador);</br></br>
+                                    contador++;</br></br>
+                                }
+                                </code></p>
+                            <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                        </div>
+
+
+                        <p class="subtitulo">Do While</p>
+                        <p class="subtexto"> (Faça Enquanto)
+                            Executa pelo menos uma vez, depois verifica a condição.</p>
+                        <div class="container_cod">
+                            <p class="box_cod" class="texto_cod"><code>
+                                let contador = 0; </br></br>
+
+                                do { </br></br>
+                                    console.log("Número:", contador); </br></br>
+                                    contador++; </br></br>
+                                } while (contador < 5); </br>
+                                </code></p> 
+                            <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                        </div>
+
+                        <p class="subtitulo">For</p>
+                        <p class="subtexto"> (Para)
+                            Usado quando se sabe o número de repetições.</p>
+                        <div class="container_cod">
+                            <p class="box_cod" class="texto_cod"><code>
+                                for (let i = 0; i < 5; i++) { </br></br>
+                                    console.log("Número:", i); </br></br>
+                                }
+                                
+                                </code></p> 
+                            <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                        </div>
+                    </div>
+                   
+
+                <div id="introducao" class="secao"> <!-- Exercício -->
+                    <h2 class="secao_titulo" id="exercicios">Exercício</h2>
+                    <p class="texto_linguagens">Lista de atividade em javascrip</p>
+                    <a class="link" href="https://github.com/MiguelKelton">Exercicios JavaScript</a>
+
+             
+                </div>
+                
+                <div id="introducao" class="secao"> <!-- Manipulação do DOM -->
+                    <h2 class="secao_titulo" id="dom">Manipulação do DOM</h2>
+                    <p class="texto_linguagens">A Manipulação do DOM (Document Object Model) no JavaScript permite alterar elementos HTML, modificar estilos e reagir a eventos da página.</p>
+    
+                    <p class="texto_ex"> Seleciona por ID</p>
+                    <div class="container_cod">
+                        <p class="texto_cod"><code>document.getElementById("meuElemento");</code></p>
+                        <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                    </div>
+    
+                    <p class="texto_ex">Seleciona a primeira classe encontrada</p>
+                    <div class="container_cod">
+                        <p class="texto_cod"><code>document.querySelector(".minhaClasse");</code></p>
+                        <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt="Copiar"></button>
+                    </div>
+    
+                    <p class="texto_ex">Seleciona todos os elementos com essa classe</p>
+                    <div class="container_cod">
+                        <p class="texto_cod"><code>document.querySelectorAll(".minhaClasse");</code></p>
+                        <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                    </div>
+
+                    <p class="texto_ex">Seleciona por tag </p>
+                    <div class="container_cod">
+                        <p class="texto_cod"><code>document.getElementsByTagName("p");</code></p>
+                        <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                    </div>
+
+                    <p class="texto_ex">Seleciona elementos pela classe</p>
+                        <div class="container_cod">
+                            <p class="texto_cod"><code>document.getElementsByClassName("minhaClasse");</code></p>
+                            <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                        </div>
+
+
+                        <p class="texto_ex">...</p>
+
+                 
+                </div>
+            
+            
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

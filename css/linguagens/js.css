@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    display: flex;
+    max-width: 800px;
+    margin-left: 60px;
+    margin: auto;
+    margin-top: 40px;
+
+}
+/* sidebar*/
+.sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    right: auto;
+    margin-left: 800px;
+    padding-left: 20px;
+    border-left: 3px solid #7e75fd;
+}
+
+.sidebar h2 {
+    font-size: 26px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 5px 0;
+}
+
+.sidebar ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    color: #7e75fd;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* */
+
+
+.content {
+    flex-grow: 1;
+    max-width: 700px;
+}
+
+.titulo_linguagens{
+    font-size: 50px;
+
+}
+
+.secao{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.secao_titulo{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.texto_linguagens{
+    font-size: 18px;
+    max-width: 600px;
+    color: #b8b8b8;
+    margin-bottom: 30px;
+    
+}
+
+/* Codigos no site */
+
+.texto_ex{
+    font-size: 19px;
+    max-width: 600px;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+.texto_cod{
+    font-size: 18px;
+    max-width: 600px;
+    color: #7e75fd;
+    
+}
+
+/* Botão de copiar texto */
+
+.container_cod {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.container_cod button {
+    background-color: #121212;
+    border: none;
+    cursor: pointer;
+    max-width: 32px;
+}
+.container_cod button:hover {
+    max-width: 34px;
+}
+
+/*  */
+
+
+.subtitulo{
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+   
+}
+
+.subtexto{
+    font-size: 18px;
+    color: #c0c0c0;
+    margin-bottom: 10px;
+}
+
+
+.box_cod{
+    background-color: #151329 ; 
+    font-size: 14px; 
+    width: 500px; 
+    padding: 20px 0px 20px 20px;
+    
+}
+
+.link{
+    color: #6c60f8;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.link:hover{
+    font-size: 18px;
+    color: #938cff;
+}

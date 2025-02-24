@@ -1,0 +1,22 @@
+/*  Estilo geral*/
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+ul,
+p {
+  margin: 0px;
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+  }
+  
+a{
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,110 @@
+.sobre{
+    background-color: #0a0a0e;
+    color: #ffffff;
+    padding-bottom: 200px;
+}
+.conteudoSobre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 60px;
+    align-items: center;
+}
+.tituloSobre{
+    margin-bottom: 32px;
+    padding-top: 100px;
+    font-size: 40px;
+    line-height: 1.125;
+}
+
+.textoSobre{
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #b2b2b2;
+}
+
+.conteudoSobre img{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    max-width: 300px;
+    opacity: 80%;
+}
+
+.conteudoSobre img:hover{
+    max-width: 320px;
+    opacity: 100%;
+}
+
+.textoSobre:hover{
+    font-size: 19px;
+    color: #ffffff;
+}
+
+.tituloSobre:hover{
+    font-size: 42px;
+
+}
+
+@media (max-width: 700px){
+    .conteudoSobre{
+    grid-template-columns: 1fr;
+    }
+    .textoSobre{
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+    .textoSobre:hover{
+        font-size: 16px;
+    }
+
+    .conteudoSobre img{
+        padding-top: 40px;
+        max-width: 300px;
+    }
+
+  }
+  
+  @media (max-width: 700px){
+    .conteudoSobre{
+    grid-template-columns: 1fr;
+    }
+    .textoSobre{
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+    .textoSobre:hover{
+        font-size: 16px;
+    }
+
+    .conteudoSobre img{
+        padding-top: 40px;
+        max-width: 300px;
+    }
+
+  }
+
+  @media (max-width: 400px){
+    .textoSobre{
+        margin-bottom: 0px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .textoSobre:hover{
+        font-size: 14px;
+    }
+
+    .conteudoSobre img{
+        display: none;
+    }
+    .conteudoSobre{
+        margin-left: 0px;
+        align-items: center;
+    }
+
+    .tituloSobre{
+
+       text-align: center;
+    }
+
+  }

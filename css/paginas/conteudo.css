@@ -1,0 +1,244 @@
+img {
+    max-width: 100%;
+    display: block;
+  }
+  .conteudo{
+      max-width: 1662px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #010508;
+      color: #ffffff;
+  }
+
+  .conteudoObj{
+    max-width: 1662px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #010508;
+    color: #ffffff;
+    padding-top: 150px;
+    padding-bottom: 250px;
+}
+
+    .introducao-cursos{
+      display: grid;
+      text-align: center;
+      gap: 5px;
+    }
+    .texto-intoducao{
+      font-size: 20px;
+      color: #3DDAFF;
+      font-weight: bold;
+      margin-top: 85px;
+  
+    }
+    .introducao-cursos h1{
+      font-size: 40px;
+    }
+  
+  
+    .introducao-cursos-titulo{
+      margin-top: 150px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-left: 60px;
+  ;
+    }
+   
+  
+    .introducao-cursos-texto{
+      font-size: 20px;
+      margin-left: 60px;
+      text-align: left;
+    }
+  
+  
+  
+  .cursos-lista ul {
+      display: flex;
+      padding: 0 0 20px 60px;
+      overflow-x: auto;
+      gap: 40px;
+      justify-content: center;
+    }
+    
+    .cursos-lista li{
+      margin-top: 120px;
+      padding-bottom: 220px;
+      border: solid 1px #ffffff;
+      width: 275px;
+      height: 120px;
+      min-width: 200px;
+    }
+    
+    .cursos-lista img{
+
+        width: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .titulo-curso{
+      margin-top: 15px;
+      font-size: 20px;
+      color: #3DDAFF;
+      text-align: center;
+    }
+    .texto-curso{
+      font-size: 14px;
+      margin-top: 10px;
+      text-align: center;
+    }
+    
+    
+    .cursos-lista li:hover {
+      max-height: 140px;
+      opacity: 100%;
+      border: solid 2px #3DDAFF;
+    
+    }
+    .cursos-lista img:hover {
+      opacity: 100%;
+    }
+    
+    .botao {
+        display: flex;
+        width: 100px;
+        height: 35px;
+        background: #010508;
+        color: #FFFFFF;
+        border: solid #ffffff;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.33;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+      
+      }
+      .botao a{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+
+      .botao:hover {
+        width: 110px;
+        height: 40px;
+        font-size: 16px;
+        border: solid #3DDAFF;
+      }
+
+  @media (max-width: 1200px) {
+      .informacao{
+          width: 800px;
+          height: 180px;
+          padding-top: 0px;
+      }
+      .informacao h1{
+          font-size: 25px;
+      }
+      .informacao p{
+          font-size: 14px;
+          }
+      .titulo-curso{
+        margin-top: 10px;
+        font-size: 18px;
+      }
+      
+      .texto-curso{
+        font-size: 16px;
+        margin-top: 8px;
+        margin-left: 10px;
+      }
+      .link-cursos{
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bold;
+      
+      }
+      .cursos-lista li{
+        margin-top: 120px;
+        height: 100px;
+        width: 220px;
+      }
+  }
+  
+  @media (max-width: 800px){
+    .informacao{
+      width: 650px;
+      height: 180px;
+      
+  }
+  .informacao h1{
+      font-size: 22px;
+  }
+  .informacao p{
+      font-size: 12px;
+      }
+  .cursos-lista li{
+    max-width: 100px;
+    font-size: 14px;
+    
+  }
+  .botao{
+    max-width: 80px;
+    max-height: 30px;
+    font-size: 12px;
+  }
+  .texto-curso{
+    font-size: 14px;
+  }
+  }
+  
+  @media (max-width: 700px){
+
+  
+  }
+  
+  @media (max-width: 600px){
+
+  }
+  
+  @media (max-width: 500px){
+    .texto-intoducao{
+      font-size: 20px;
+    }
+    .introducao-cursos h1{
+      font-size: 28px;
+  
+    }
+  
+    .introducao-cursos-titulo{
+      margin-top: 90px;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+   
+    .introducao-cursos-texto{
+      padding-top: 0px;
+      font-size: 18px;
+      display: flex;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .cursos-lista li{
+      margin-top: 80px;
+      height: 100px;
+    }
+    .vetor{
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  
+  

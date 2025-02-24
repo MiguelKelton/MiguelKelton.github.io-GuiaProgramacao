@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1><a href="./index.html">NewCod</a></h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#guia" class="nav-link">Guia</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link"> Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <a href="./index.html"><img class="vetor" src="./imagens/House (1).svg" alt=""></a>
+            </div>
+    
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./imagens/menu_white_36dp.svg" alt=""></button>
+            </div>
+
+
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+    
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="introducao-bg">
+        <div class="introducao">
+          <div class="introducao-conteudo">
+            <h1>GUIA BÁSICO </br>PROGRAMAÇÃO<span>.</span></h1>
+            <a href="#guia">COMECE AGORA</a>
+          </div>
+
+     
+          <div class="div">
+            <img src="./imagens/img.png" alt="Imagem planeta terra">
+          </div>
+
+          
+   
+        </div>
+        <div id="scrollDownBtn" class="play">
+            <a href="#"><img src="./imagens/play.svg" alt="Botã para rola para proxima pagina"></a>
+          </div>
+      </main>
+
+      <article class="conteudo">
+      
+        <div class="introducao-cursos">
+          <p class="texto-intoducao">LINGUAGENS</p>
+          <h1>Todas as linguagens</h1>
+        </div>
+
+        <div class="introducao-cursos">
+        <div class="introducao-cursos-titulo">
+          <h1>Conteudo WEB</h1>
+          <img class="vetor" src="./imagens/Vector.svg" alt="">
+        </div>
+          <p class="introducao-cursos-texto">Encontre o melhor conteudo !</p>
+        </div>
+
+
+        <div class="cursos-lista" id="guia">
+          <ul>
+            <li>
+                <img src="./imagens/html_icon.svg" alt="Icone html">
+                <h1 class="titulo-curso">HTML</h1>
+                <p class="texto-curso">HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores.</p>
+                <button class="botao"><a href="./conteudoht.html"> Entrar</a></button>
+              
+            </li>
+
+            <li>
+                <img src="./imagens/css_icon.svg" alt="Icone html">
+                <h1 class="titulo-curso">CSS</h1>
+                <p class="texto-curso">Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags </p>
+                <button class="botao"><a href="./conteudocss.html"> Entrar</a></button>
+              
+            </li>
+
+            <li>
+                <img src="./imagens/js_icon.svg" alt="Icone html">
+                <h1 class="titulo-curso">JavaScript</h1>
+                <p class="texto-curso">JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
+                <button class="botao"><a href="./conteudojs.html"> Entrar</a></button>
+              
+            </li>
+          </ul>
+
+          </div>
+        
+      </article>
+
+      <article class="conteudoObj">
+
+        <div class="introducao-cursos">
+        <div class="introducao-cursos-titulo">
+          <h1>Linguagens orientadas a objetos</h1>
+          <img class="vetor" src="./imagens/Vector.svg" alt="">
+        </div>
+          <p class="introducao-cursos-texto">Liguagens orientadas a objetos !</p>
+        </div>
+
+
+        <div class="cursos-lista">
+          <ul>
+            <li>
+                <img src="./imagens/java_icon.svg" alt="Icone html">
+                <h1 class="titulo-curso">JAVA</h1>
+                <p class="texto-curso">Java é uma linguagem de programação orientada a objetos. </p>
+                <button class="botao"><a href="./conteudojava.html"> Entrar</a></button>
+              
+            </li>
+
+            <li>
+                <img src="./imagens/python_icon.svg" alt="Icone html">
+                <h1 class="titulo-curso">PYTHON</h1>
+                <p class="texto-curso">Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991. </p>
+                <button class="botao"><a href="./conteudopy.html"> Entrar</a></button>
+              
+            </li>
+
+            <li>
+                <img src="./imagens/embreve.svg" alt="Icone html">
+                <h1 class="titulo-curso">EM BREVE</h1>
+                <p class="texto-curso">Novas linguagens serão adicionadas em breve.</p>
+                <button class="botao"><a href="#"> SOBRE</a></button>
+              
+            </li>
+          </ul>
+
+          </div>
+        
+      </article>
+
+      <article class="sobre" id="sobre">
+        <div class="conteudoSobre">
+          <div class="texto">
+            <h1 class="tituloSobre">Sobre</h1>
+            <p class="textoSobre">Essa página foi criada com intuito de salvar códigos e comandos essenciais para a criação de sites. Eu o desenvolvi enquanto realiza um curso de programação, tendo então como objetivo principal me ajudar a decorar alguns comandos e fixar o conteúdo aprendido. Porém o disponibilizei na internet para que possa ser de uso público.
+            Conteúdo totalmente em pt-br</p>
+          </div>
+
+          <img src="./imagens/planeta.png" alt="planeta">
+
+        </div>
+      </article>
+
+      <footer>
+        <div class="footer-conteudo" id="contato">
+          <div class="footer-info">
+            <h3>Obrigado</h3>
+            <p>💡 Tem sugestões ou ideias para melhorar nosso site? Envie seu feedback para</p>
+            <p>miguelkelton4@gmail.com</p>
+          </div>
+          <div class="footer-contato">
+            <h3>Entre em Contato</h3>
+            <form action="#" method="post">
+              <input type="email" name="email" placeholder="Seu e-mail" required>
+              <textarea name="message" placeholder="Sua mensagem" required></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

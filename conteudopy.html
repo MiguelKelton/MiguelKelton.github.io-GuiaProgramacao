@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Programação</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>New</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Guia</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <a href="#"><img class="vetor" src="./imagens/House (1).svg" alt=""></a>
+            </div>
+    
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./imagens/menu_white_36dp.svg" alt=""></button>
+            </div>
+
+
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+    
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Nesse artigo</h2>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#instalar">Instalar Python</a></li>
+                <li><a href="#variaveis">Variáveis</a></li>
+                <li><a href="#operacoes">Operações</a></li>
+                <li><a href="#funcoes">Funções</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1 class="titulo_linguagens">Python</h1>
+
+            <div id="introducao" class="secao"> <!-- Introdução -->
+                <h2 class="secao_titulo">O que é</h2>
+                <p class="texto_linguagens">Python é uma linguagem de programação de alto nível, conhecida por sua simplicidade e 
+                    legibilidade. Criada por Guido van Rossum, ela possui uma sintaxe clara e intuitiva, tornando-se ideal para iniciantes e 
+                    ao mesmo tempo poderosa para desenvolvedores experientes. </br> Ela é amplamente usada em diversas áreas, como desenvolvimento web, 
+                    automação, ciência de dados, inteligência artificial, machine learning e segurança cibernética. Python é uma linguagem interpretada e 
+                    multiplataforma, o que significa que pode ser executada em diferentes sistemas operacionais sem necessidade de compilação. </br>
+                    Com uma vasta biblioteca padrão e uma comunidade ativa, Python é uma das linguagens mais populares do mundo da programação.
+
+                </p>
+            
+                <p class="texto_ex">Download Python</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><a class="link" href=" https://www.python.org/downloads/"> https://www.python.org/downloads/</a></p>
+                </div>
+
+                <p class="texto_ex">Exibir informações</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>print("Olá, mundo!")</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt="Copiar"></button>
+                </div>
+
+                <p class="texto_ex">Comentários</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code># Isso é um comentário</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <p class="texto_ex">Comentários Longo</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>""" 
+                        Este é um comentário</br>
+                        de múltiplas linhas.</br>
+                        """</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+             
+            </div>
+
+            <div id="instalar" class="secao"> <!-- Instalar Python -->
+                <h2  class="secao_titulo">Instalar Python</h2>
+                <p class="texto_linguagens"></p>
+            
+                <p class="texto_ex">Criar ambiente virtual. </p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>python -m venv ambiente</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt="Copiar"></button>
+                </div>
+
+                <p class="texto_ex">Ativar o abiente</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>cd ambiente\Scripts</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt="Copiar"></button>
+                </div>
+
+                <div class="container_cod">
+                    <p class="texto_cod"><code>Set-ExecutionPolicy -Scope CurrentUser </br> -ExecutionPolicy RemoteSigned
+                    </code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt="Copiar"></button>
+                </div>
+
+                <div class="container_cod">
+                    <p class="texto_cod"><code>.\activate
+                    </code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt="Copiar"></button>
+                </div>
+
+            </div>
+            
+
+            <div id="variaveis" class="secao"> <!-- Variavel -->
+                <h2 class="secao_titulo">Variáveis</h2>
+
+                <p class="subtitulo">String</p>
+                <p class="subtexto">Texto</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>nome = "Miguel"</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <p class="subtitulo">Int</p>
+                <p class="subtexto">Inteiro </p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>idade = 25 </code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <p class="subtitulo">Float</p>
+                <p class="subtexto">Número decimal</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>altura = 1.68 </code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <p class="subtitulo">Bool</p>
+                <p class="subtexto">Booleano</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>programador = True</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <p class="subtitulo">Formas de exibir variável com texto</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>print("Olá, " + nome + "! Seja bem-vindo.")</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>print(f"Você tem {idade} anos.")</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>print("Eu moro em {}.".format(cidade))</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                
+            </div>
+
+
+            <div id="operacoes" class="secao"> <!-- Operações Aritméticas -->
+                <h2 class="secao_titulo">Operações Aritméticas</h2>
+
+                <p class="texto_cod"><code>num1 = 5</code></p>
+                <p class="texto_cod"><code>num2 = 3.5</code></p>
+
+
+                <p style="margin-top: 15px;" class="subtexto">Descobrir tipo da variavel</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>a = float(num1)</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <p style="margin-top: 15px;" class="subtexto">Converter</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>print(type(num1))</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>a = "5"</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <p class="subtitulo">Operações Matemáticas</p>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>print(num1 + num2)</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <div class="container_cod">
+                    <p class="texto_cod"><code>print(num1 - num2)</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <div class="container_cod">
+                    <p class="texto_cod"><code>print(num1 * num2)</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+
+                <div class="container_cod">
+                    <p class="texto_cod"><code>print(num1 / num2)</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                </div>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>print(num1 % num2)</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button> <p>0 (resto da divisão)</p>
+                </div>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>print(num1 // num2)</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button> <p>Divisão inteira</p>
+                </div>
+                <div class="container_cod">
+                    <p class="texto_cod"><code>print(num1 ** num2)</code></p>
+                    <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button> <p>Potência</p>
+                </div>
+                
+            </div>
+
+            <div id="funcoes" class="secao"> <!-- Funções -->
+                <h2 class="secao_titulo">Funções</h2>
+
+                <p class="subtitulo">If e Else:</p>
+                        <p class="subtexto">Executa um bloco de código se a condição for verdadeira, senão executa outro bloco.</p>
+                        <p class="subtexto"></p>
+                        <div class="container_cod">
+                            <p class="box_cod" class="texto_cod"><code>idade = 18 </br></br>
+
+                                if idade >= 18:  </br></br>
+                                    print("Você é maior de idade.") </br></br>
+                                    else:  </br></br>
+                                        print("Você é menor de idade.")</code></p>
+                            <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                        </div>
+
+                    <p class="subtitulo">Elif</p>
+                    <p class="subtexto">(Else If)</p>
+                    <p class="subtexto">elif pode ser usada para verificar múltiplas condições.</p>
+                    <div class="container_cod">
+                        <p class="box_cod" class="texto_cod"><code>nota = 7 </br></br>
+                            if nota >= 9: </br></br>
+                            print("Excelente!") </br></br>
+                            elif nota >= 7:</br></br>
+                            print("Bom trabalho!")</br></br>
+
+                            elif nota >= 5:</br></br>
+                            print("Você passou!")</br></br>
+                            else:</br></br>
+                            print("Você reprovou.")</br></br>
+                        </code></p>
+                        <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt=""></button>
+                    </div>
+
+                <p class="texto_linguagens">...</p>
+            </div>
+          
+            
+            
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
