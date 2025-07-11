@@ -90,6 +90,13 @@ body {
     color: #ffffff;
     margin-bottom: 4px;
 }
+.texto_m{
+    font-size: 25px;
+    max-width: 600px;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
 .texto_cod{
     font-size: 18px;
     max-width: 600px;

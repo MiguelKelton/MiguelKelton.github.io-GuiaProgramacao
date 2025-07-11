@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeneXus</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav-bar">
+        <div class="logo">
+            <h1>New</h1>
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Guia</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="login-button">
+            <a href="#"><img class="vetor" src="./imagens/House (1).svg" alt=""></a>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./imagens/menu_white_36dp.svg" alt=""></button>
+        </div>
+
+
+    </nav>
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+        </ul>
+
+        <div class="login-button">
+            <button><a href="#">Entrar</a></button>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h2>Nesse artigo</h2>
+        <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#variaveis">Variáveis</a></li>
+            <li><a href="#operadores">Operadores</a></li>
+            <li><a href="#controle">Controle de fluxo</a></li>
+            <li><a href="#exercicios">Exercício</a></li>
+            <li><a href="#dom">Manipulação do DOM</a></li>
+        </ul>
+    </aside>
+
+    <main class="content">
+
+        <h1 class="titulo_linguagens">GeneXus</h1>
+
+        <div id="introducao" class="secao"> <!-- Introdução -->
+            <h2 class="secao_titulo">O que é</h2>
+            <p class="texto_linguagens">GeneXus é uma plataforma de desenvolvimento de software de baixo código (low-code) impulsionada por inteligência artificial que automatiza e simplifica a criação, evolução e manutenção de aplicações empresariais. Essencialmente, é um sistema que permite que desenvolvedores criem software de forma mais rápida e eficiente, utilizando representação de conhecimento e gerando código nativo para diversas plataformas, como web, dispositivos móveis e sistemas Windows.</p>
+
+            <p class="texto_ex">Curso Gratuito</p>
+            <a class="link" href="https://training.genexus.com/pt/aprendizagem/cursos/genexus/v18/core">Curso GeneXus Core</a>
+        </div>
+
+    <div id="comandos" class="secao"> 
+        <h2 class="secao_titulo">Principais Comandos</h2>
+        <p class="texto_ex">Ctrl + N</p>
+        <p class="texto_linguagens">Cria um novo Obejto</p>
+    </div>
+
+            
+    <div id="basico" class="secao"> 
+        <h2 class="secao_titulo">Conceitos Basicos</h2>
+        <p class="texto_m">Knowledge Base (KB) </p>
+ 
+        <p class="texto_linguagens">Base de conhecimento  </br>A KB é o projeto principal em GeneXus. É onde você desenvolve toda a sua aplicação. Em resumo, a KB é o coração do seu sistema dentro do GeneXus.  </p>
+
+      
+    </div>
+
+    <div id="objetos" class="secao">
+        <h2 class="secao_titulo">Objetos</h2>
+        <p class="texto_m">Transaction</p>
+        <p class="texto_ex">O que é um Transaction? </p>
+        <p class="texto_linguagens">Um Transaction representa uma entidade do mundo real, 
+            como por exemplo: Cliente, Produto ,Pedido, Funcionário </br> Quando você cria uma transação,
+             você está dizendo ao GeneXus: </br> “Quero armazenar informações sobre X, com tais atributos, 
+             e com tais relações.”</p>
+
+        <p class="texto_ex">O que ela faz? </p>
+        <p class="texto_linguagens">Ao criar uma Transaction, GeneXus: Gera automaticamente a estrutura da 
+            tabela no banco de dados. Cria a interface de cadastro (tela) para inserir, editar e excluir 
+            dados. Define regras como chave primária, relacionamento e integridade referencial. </br> Não 
+            precisa escrever SQL nem montar telas manualmente. 
+            Você modela no Transaction e o GeneXus: Cria a tabela no banco, 
+            Cria os relacionamentos corretos, Gera a interface de cadastro automaticamente
+            Aplica as regras de integridade
+        </p>
+    </div>
+
+    <div id="view" class="secao">
+        <h2 class="secao_titulo">View</h2>
+        
+    </div>
+
+    <div id="dominio" class="secao">
+        <h2 class="secao_titulo">Dominio</h2>
+        <h2 class="secao_titulo">O que é</h2>
+        <p class="texto_linguagens">Domínios em GeneXus são definições reutilizáveis de tipos de dados </br> Tipo de dado (por exemplo: Character, Numeric, Date, etc.) </br>Tamanho e formato </br> Regras de validação (opcional) </br> Máscara de exibição, descrição, etc. </br></br> Assim, em vez de configurar esses detalhes repetidamente para cada atributo, você os define uma vez no domínio e reutiliza onde quiser.  </p>
+
+        <p class="texto_ex">Como definir um dominio</p>
+        <div class="container_cod">
+            <p class="texto_cod"><code>Id=Numeric(4,0)</code></p>
+            <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt="Copiar"></button>
+        </div>
+
+        <img src="./Screenshot_8.png" alt="">
+
+
+        <p class="texto_ex"></br> Aula 7</p>
+        <div class="container_cod">
+            <p class="texto_cod"><a class="link" href="https://training.genexus.com/pt/aprendizagem/cursos/genexus/v17/core/cont/atributos-e-dominios">Atributos e domínios</a></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+          
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
