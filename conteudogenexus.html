@@ -87,8 +87,9 @@
     </div>
 
     <div id="objetos" class="secao">
-        <h2 class="secao_titulo">Objetos</h2>
-        <p class="texto_m">Transaction</p>
+        <h2 class="secao_titulo">Objetos em genexus</h2>
+        <h2 class="secao_titulo2">Transaction {</h2>
+            
         <p class="texto_ex">O que é um Transaction? </p>
         <p class="texto_linguagens">Um Transaction representa uma entidade do mundo real, 
             como por exemplo: Cliente, Produto ,Pedido, Funcionário </br> Quando você cria uma transação,
@@ -104,10 +105,105 @@
             Cria os relacionamentos corretos, Gera a interface de cadastro automaticamente
             Aplica as regras de integridade
         </p>
+        <h2 class="secao_titulo2">}</h2>
+
+        <h3 class="secao_titulo3">Structure {</h3>
+        <p class="texto_ex">O que é a aba Structure? </p>
+        <p class="texto_linguagens">A aba Structure (estrutura) em uma Transaction do GeneXus serve para definir os atributos e a hierarquia de dados que formarão a transação — ou seja, a estrutura que o GeneXus vai transformar em tabelas no banco.</p>
+
+        <img src="" alt="Imagem" class="imagem" onclick="abrirZoom(this)">
+        <div class="zoom-container" id="zoomContainer" onclick="fecharZoom()">
+            <img id="imagemZoom" src="">
+        </div>
+        
+        <div class="imagem-wrapper" onclick="abrirZoom(this)">
+        <img src="./imagens/genexus/Structure.png" class="imagem" alt="Imagem pequena">
+        </div>
+        
+
+        <p class="texto_ex">Atributos (Attributes)</p>
+        <p class="texto_linguagens">Para cada Objeto transação, você tem que definir o atributos ou campos 
+        que descrevem aquele objeto da realidade.<br> São os campos da transação 
+        (como colunas em uma tabela). Exemplo: Id, Nome, Email, CPF.</p>
+
+        <p class="texto_ex">Primary Key </p>
+        <p class="texto_linguagens">A chave primária é o campo (ou conjunto de campos) que identifica 
+        unicamente cada registro de uma tabela (ou "Transaction" no GeneXus).
+        </p>
+
+        <div class="imagem-wrapper" onclick="abrirZoom(this)">
+        <img src="./imagens/genexus/chave.png" class="imagem" alt="Imagem pequena">
+        </div>
+
+        <p class="texto_linguagens2">Ela é atribuida automaticamente ao primeiro campo criado de uma 
+        Transaction</p>
+        <p class="texto_linguagens">Também é possível clicar com o botão direito em um atributo e marcar 
+        como chave primária (Key), caso deseje alterar a definição.</p>
+        <div class="imagem-wrapper" onclick="abrirZoom(this)">
+        <img src="./imagens/genexus/chave 2.png" class="imagem" alt="Imagem pequena">
+        </div>
+
+        <p class="texto_ex"> Data Types (Tipo de dados) <span>{</span></p>
+        <p class="texto_linguagens">em GeneXus, os Data Types (tipos de dados) definem que tipo de 
+        informação um atributo ou variável pode armazenar. Eles são essenciais para controlar validação, 
+        formato, armazenamento no banco de dados e apresentação na interface.</p>
+        <p class="texto_ex"> Categorias de Data Types:</p>
+        <p class="texto_linguagens">em GeneXus, os Data Types (tipos de dados) definem que tipo de 
+        informação um atributo ou variável pode armazenar. Eles são essenciais para controlar validação, 
+        formato, armazenamento no banco de dados e apresentação na interface.</p>  
+        <p class="texto_ex"><span>Numeric:</span></p>
+        <p class="texto_linguagens">Representa números com ou sem casas decimais, usado para valores como preços, quantidades, porcentagens, etc.</p> 
+        <p class="texto_linguagens2">Exemplo: Numeric(5,2)</p> 
+        
+        <p class="texto_ex"><span>Varchar:</span></p>
+        <p class="texto_linguagens">É um tipo de dado de texto de tamanho variável, ideal para nomes, descrições curtas e dados onde o tamanho pode variar bastante.</p> 
+        <p class="texto_linguagens2">Exemplo: VarChar(n) </p>
+        
+        <p class="texto_ex"><span>Character:</span></p>
+        <p class="texto_linguagens">Representa uma cadeia de texto de tamanho fixo. Ou seja, sempre reserva n posições, mesmo que o texto seja menor.</p> 
+        <p class="texto_linguagens2">Exemplo: Character(10)</p>
+
+        <p class="texto_ex"><span>Date:</span></p>
+        <p class="texto_linguagens">Armazena somente a data, sem hora. Muito usado para datas de nascimento, datas de vencimento, datas de cadastro, etc.</p> 
+        <p class="texto_linguagens2">Exemplo: dd/mm/yyyy</p>
+
+        <p class="texto_ex"><span>Boolean:</span></p>
+        <p class="texto_linguagens">Tipo lógico, que armazena apenas dois valores:</p> 
+        <p class="texto_linguagens2">Exemplo: True / False</p>
+
+
+
+
+
+
+
+        <p class="texto_ex"><span>}</span></p>
+
+
+
+
+        <p class="texto_ex">Foreign Key</p>
+        <p class="texto_linguagens">A chave estrangeira é um atributo que referencia a chave primária 
+        de outra transação. Ela serve para relacionar duas tabelas.
+        </p>
+                
+
+
+
+        <h3 class="secao_titulo3">}</h3>
+
     </div>
+
+
+
 
     <div id="view" class="secao">
         <h2 class="secao_titulo">View</h2>
+        
+    </div>
+
+    <div id="view" class="secao">
+        <h2 class="secao_titulo">Atributos</h2>
         
     </div>
 
@@ -122,8 +218,10 @@
             <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt="Copiar"></button>
         </div>
 
-        <img src="./Screenshot_8.png" alt="">
 
+        <div class="imagem-wrapper" onclick="abrirZoom(this)">
+        <img src="./Screenshot_8.png" class="imagem" alt="Imagem pequena">
+        </div>
 
         <p class="texto_ex"></br> Aula 7</p>
         <div class="container_cod">

@@ -8,6 +8,7 @@ body {
 }
 
 .container {
+
     display: flex;
     max-width: 800px;
     margin-left: 60px;
@@ -70,9 +71,36 @@ body {
     margin-bottom: 100px;
 }
 .secao_titulo{
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 25px;
 }
+
+/* 
+.secao_titulo2{
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #ff8b2b;
+}*/
+
+.secao_titulo2{
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #6c60f8;
+}
+.secao_titulo3{
+    font-size: 32px;
+    margin-bottom: 25px;
+    color:#938cff
+}
+
+span{
+    color:#938cff
+}
+.span2{
+    color:#ffffff
+}
+
+
 
 .texto_linguagens{
     font-size: 18px;
@@ -80,6 +108,12 @@ body {
     color: #b8b8b8;
     margin-bottom: 30px;
     
+}
+.texto_linguagens2{
+    font-size: 18px;
+    max-width: 600px;
+    color: #b8b8b8;
+    margin-top: -25px;
 }
 
 /* Codigos no site */
@@ -145,6 +179,59 @@ body {
     padding: 20px 0px 20px 20px;
     
 }
+
+img{
+    opacity: 90%;
+    width: 98%;
+    height: 98%;
+    margin-bottom: 35px;
+}
+
+img:hover{
+    opacity: 100%;
+     width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+/* Fundo escuro quando o zoom estiver ativo */
+    .imagem-wrapper {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+
+
+    /* Fundo de zoom */
+    .zoom-container {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .zoom-container img {
+      max-width: 90vw;
+      max-height: 90vh;
+      width: auto;
+      height: auto;
+      box-shadow: 0 0 20px #fff;
+    }
+
+    @media (max-width: 600px) {
+      .imagem {
+        width: 100px;
+      }
+      .icone-zoom {
+        font-size: 11px;
+        padding: 2px 4px;
+      }
+    }
 
 .link{
     color: #6c60f8;

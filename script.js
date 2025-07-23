@@ -32,3 +32,14 @@ function copiarTexto(botao) {
     // Copia para a área de transferência
     navigator.clipboard.writeText(texto)
 }
+
+function abrirZoom(wrapper) {
+      const imagem = wrapper.querySelector('img');
+      const imagemZoom = document.getElementById('imagemZoom');
+      imagemZoom.src = imagem.src;
+      document.getElementById('zoomContainer').style.display = 'flex';
+    }
+
+    function fecharZoom() {
+      document.getElementById('zoomContainer').style.display = 'none';
+    }
