@@ -50,11 +50,12 @@
         <h2>Nesse artigo</h2>
         <ul>
             <li><a href="#introducao">Introdução</a></li>
-            <li><a href="#variaveis">Variáveis</a></li>
-            <li><a href="#operadores">Operadores</a></li>
-            <li><a href="#controle">Controle de fluxo</a></li>
-            <li><a href="#exercicios">Exercício</a></li>
-            <li><a href="#dom">Manipulação do DOM</a></li>
+            <li><a href="#variaveis">Objetos</a></li>
+            <li><a href="#operadores">Transaction</a></li>
+            <li><a href="#controle">Dominio</a></li>
+            <li><a href="#exercicios">Propriedas</a></li>
+            <li><a href="#exercicios">Transações relacionadas</a></li>
+            <li><a href="#levels">Transaction levels</a></li>
         </ul>
     </aside>
 
@@ -89,6 +90,7 @@
     <div id="objetos" class="secao">
         <h2 class="secao_titulo">Objetos em genexus</h2>
         <h2 class="secao_titulo2">Transaction {</h2>
+        <a class="link" href="https://wiki.genexus.com/commwiki/wiki?1908,Category%3ATransaction+object">Wiki Transaction </br> </br></a>
             
         <p class="texto_ex">O que é um Transaction? </p>
         <p class="texto_linguagens">Um Transaction representa uma entidade do mundo real, 
@@ -117,7 +119,7 @@
         </div>
         
         <div class="imagem-wrapper" onclick="abrirZoom(this)">
-        <img src="./imagens/genexus/Structure.png" class="imagem" alt="Imagem pequena">
+        <img class="img" src="./imagens/genexus/Structure.png" class="imagem" alt="Imagem pequena">
         </div>
         
 
@@ -132,7 +134,7 @@
         </p>
 
         <div class="imagem-wrapper" onclick="abrirZoom(this)">
-        <img src="./imagens/genexus/chave.png" class="imagem" alt="Imagem pequena">
+        <img class="img" src="./imagens/genexus/chave.png" class="imagem" alt="Imagem pequena">
         </div>
 
         <p class="texto_linguagens2">Ela é atribuida automaticamente ao primeiro campo criado de uma 
@@ -140,7 +142,7 @@
         <p class="texto_linguagens">Também é possível clicar com o botão direito em um atributo e marcar 
         como chave primária (Key), caso deseje alterar a definição.</p>
         <div class="imagem-wrapper" onclick="abrirZoom(this)">
-        <img src="./imagens/genexus/chave 2.png" class="imagem" alt="Imagem pequena">
+        <img class="img" src="./imagens/genexus/chave 2.png" class="imagem" alt="Imagem pequena">
         </div>
 
         <p class="texto_ex"> Data Types (Tipo de dados) <span>{</span></p>
@@ -170,27 +172,117 @@
         <p class="texto_ex"><span>Boolean:</span></p>
         <p class="texto_linguagens">Tipo lógico, que armazena apenas dois valores:</p> 
         <p class="texto_linguagens2">Exemplo: True / False</p>
-
-
-
-
-
-
-
         <p class="texto_ex"><span>}</span></p>
+        
+
+        <h3 class="secao_titulo3">Dominio {</h3>
+        <p class="texto_ex">O que é</p>
+        <p class="texto_linguagens">Domínios em GeneXus são definições reutilizáveis de tipos de dados 
+        </br>Tamanho e formato </br> Regras 
+        de validação (opcional) </br> Máscara de exibição, descrição, etc. </br></br> Assim, em vez de 
+        configurar esses detalhes repetidamente para cada atributo, você os define uma vez no domínio e
+        reutiliza onde quiser.  </p>
+
+        <p class="texto_ex">Como definir um dominio</p>
+        <div class="container_cod">
+            <p class="texto_cod"><code>Id=Numeric(4,0)</code></p>
+            <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt="Copiar"></button>
+        </div>
 
 
+        <div class="imagem-wrapper" onclick="abrirZoom(this)">
+        <img class="img" src="./imagens/genexus/dominio.png" class="imagem" alt="Imagem pequena">
+        </div>
 
+        <p class="texto_ex"></br> Aula 7</p>
+        <div class="container_cod">
+            <p class="texto_cod"><a class="link" href="https://training.genexus.com/pt/aprendizagem/cursos/genexus/v17/core/cont/atributos-e-dominios">Atributos e domínios</a></p> 
+        </div>
+         <h3 class="secao_titulo3">}</h3>
+        
 
+        <h3 class="secao_titulo3">Propriedas de atributos {</h3>
+        <p class="texto_linguagens">Em GeneXus, após criar um <span>atributo</span>, você pode ajustar suas configurações
+        na aba <span>Properties</span>, onde é possível definir características como tipo de dado, comprimento, 
+        número de casas decimais, título de exibição, visibilidade na interface e outras propriedades
+        que influenciam o comportamento do atributo no sistema e no banco de dados.</p>
+        <p class="texto_linguagens2"><span>Atalho: F4</span></p>
+        <div class="imagem-wrapper" onclick="abrirZoom(this)">
+        <img class="img" src="./imagens/genexus/Propriedades.png" class="imagem" alt="Imagem pequena">
+        </div>
+        <p class="texto_ex">Nullable:</p>
+        <p class="texto_linguagens2">Essa propriedade define se o campo pode ou não aceitar valores nulos (em branco ou indefinidos) no banco de dados e na aplicação</p>
+        <p class="texto_ex">Formula:</p>
+        <h3 class="secao_titulo3">}</h3>
+
+        <div class="secao">
+        <h3 class="secao_titulo3">Transações relacionadas {</h3>
+        <p class="texto_ex">O que é?</p>
+        <p class="texto_linguagens">Transações relacionadas em GeneXus são aquelas que têm um vínculo 
+        lógico entre si, geralmente por meio de atributos em comum (chave estrangeira). Em outras palavras: 
+        são entidades diferentes, mas compartilham um relacionamento, como "um cliente pode ter vários 
+        pedidos</p>
         <p class="texto_ex">Foreign Key</p>
-        <p class="texto_linguagens">A chave estrangeira é um atributo que referencia a chave primária 
+        <p class="texto_linguagens">A <span>chave spaestrangeira</span> é um atributo que referencia a chave primária 
         de outra transação. Ela serve para relacionar duas tabelas.
         </p>
-                
-
-
-
+        <div class="imagem-wrapper" onclick="abrirZoom(this)">
+        <img class="img" src="./imagens/genexus/chaveEstrangeira2.png" class="imagem" alt="Imagem pequena">
+        </div>
         <h3 class="secao_titulo3">}</h3>
+        </div>
+
+    <div id="levels" class="secao">
+        <h3 class="secao_titulo3">Transaction levels {</h3>
+        <h3 class="secao_titulo4">Transações com mais de um nível </h3>
+        <p class="texto_ex">O que é?</p>
+        <p class="texto_linguagens">Em GeneXus, os <span>Transaction Levels</span> (Níveis de uma Transação) 
+        representam a estrutura hierárquica de dados dentro de uma transação. Cada nível define como os
+        dados se relacionam entre si e como serão armazenados no banco de dados.</p>
+        <p class="texto_linguagens"> <span>Transaction Levels</span> representam a estrutura hierárquica de uma 
+        transação em GeneXus. O primeiro nível contém os dados principais (como o cliente), e os 
+        níveis inferiores representam dados relacionados em uma relação de 1:N (como os telefones do 
+        cliente). Cada nível gera uma tabela no banco de dados, com a chave do nível pai sendo herdada. 
+        Isso permite modelar dados complexos de forma organizada e automatizada.</p>
+        <p class="texto_linguagens">Cada vez que você adiciona um <span>nível</span>, está dizendo que os dados abaixo 
+        pertencem ao nível anterior, ou seja, eles têm uma relação de dependência 
+        lógica e estrutural.</p>
+        <p class="texto_ex">Como criar um level</p>
+        <div class="imagem-wrapper" onclick="abrirZoom(this)">
+        <img class="img" src="./imagens/genexus/level.png" class="imagem" alt="Imagem pequena">
+        </div>
+        <p class="texto_ex">Exemplo:</p>
+        <div class="imagem-wrapper" onclick="abrirZoom(this)">
+        <img class="img" src="./imagens/genexus/nivel2.png" class="imagem" alt="Imagem pequena">
+        </div>
+        <h3 class="secao_titulo3">}</h3>
+    </div>
+
+    <div id="rules" class="secao">
+        <h3 class="secao_titulo3">Rules {</h3>
+        <h3 class="secao_titulo4">Regras</h3>
+        <p class="texto_ex">O que é?</p>
+        <p class="texto_linguagens">As Rules desempenham um papel crucial nos objetos de transação em 
+        GeneXus, pois permitem programar e controlar o comportamento da transação em diferentes momentos. 
+        Com elas, é possível atribuir valores padrão, realizar validações de dados, definir chaves compostas, 
+        exibir mensagens, impedir a edição de campos e muito mais.</p>
+        <p class="texto_ex">Error</p>
+        <p class="texto_ex">Msg</p>
+        <p class="texto_ex">Default</p>
+        <p class="texto_ex">NoAccept</p>
+        <p class="texto_ex">Serial</p>
+        <h3 class="secao_titulo3">}</h3>
+    </div>
+
+    <div id="Variaveis" class="secao">
+        <h3 class="secao_titulo3">Variaveis {</h3>
+        <h3 class="secao_titulo3">}</h3>
+    </div>
+
+    <div id="Patterns" class="secao">
+        <h3 class="secao_titulo3">Patterns {</h3>
+        <h3 class="secao_titulo3">}</h3>
+    </div>
 
     </div>
 
@@ -202,43 +294,8 @@
         
     </div>
 
-    <div id="view" class="secao">
-        <h2 class="secao_titulo">Atributos</h2>
-        
-    </div>
-
-    <div id="dominio" class="secao">
-        <h2 class="secao_titulo">Dominio</h2>
-        <h2 class="secao_titulo">O que é</h2>
-        <p class="texto_linguagens">Domínios em GeneXus são definições reutilizáveis de tipos de dados </br> Tipo de dado (por exemplo: Character, Numeric, Date, etc.) </br>Tamanho e formato </br> Regras de validação (opcional) </br> Máscara de exibição, descrição, etc. </br></br> Assim, em vez de configurar esses detalhes repetidamente para cada atributo, você os define uma vez no domínio e reutiliza onde quiser.  </p>
-
-        <p class="texto_ex">Como definir um dominio</p>
-        <div class="container_cod">
-            <p class="texto_cod"><code>Id=Numeric(4,0)</code></p>
-            <button onclick="copiarTexto(this)"><img src="./imagens/copy.svg" alt="Copiar"></button>
-        </div>
-
-
-        <div class="imagem-wrapper" onclick="abrirZoom(this)">
-        <img src="./Screenshot_8.png" class="imagem" alt="Imagem pequena">
-        </div>
-
-        <p class="texto_ex"></br> Aula 7</p>
-        <div class="container_cod">
-            <p class="texto_cod"><a class="link" href="https://training.genexus.com/pt/aprendizagem/cursos/genexus/v17/core/cont/atributos-e-dominios">Atributos e domínios</a></p>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-          
-        </main>
+   
+    </main>
     </div>
 
     <script src="script.js"></script>
